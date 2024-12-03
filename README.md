@@ -1,2 +1,2 @@
-# golang-ed25519EncryptionOpenSSH
+# Example code for libp2p key format conversion
 I made this example to demonstrate how to store Ed25519 private keys as encrypted keys in OpenSSH format. Also derives the respective pubkey and libp2p nodeID string. It took me way too long to make this example, it still is unclear to me whether libp2p/crypto keys are not compatible with crypto/ssh functions or if that is currently bugged or maybe it is possible but not just documented? Using crypto/ed25519 instead of libp2p/crypto to generate the keys seems to be the secret sauce.
